@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  deepstack:
+    container_name: deepstack
+    image: deepquestai/deepstack
+    ports:
+      - '5000:5000'
+    environment:
+      - VISION-DETECTION=True
+    restart: unless-stopped
